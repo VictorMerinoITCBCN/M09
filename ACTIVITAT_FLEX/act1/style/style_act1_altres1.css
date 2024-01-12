@@ -7,6 +7,10 @@ div{
     background: var(--color);
 }
 
+div:hover > span{
+    transform: rotate(45deg);
+}
+
 div:nth-child(1),div:nth-child(5),div:nth-child(9){
     --color: #40f;
 }
