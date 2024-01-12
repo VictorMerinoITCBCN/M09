@@ -1,11 +1,13 @@
 body{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 div{
     background: var(--color);
-    border: 1px solid #222;
+    width: 25%;
+    height: 180px;
 }
 
 div:nth-child(1),div:nth-child(5),div:nth-child(9){
