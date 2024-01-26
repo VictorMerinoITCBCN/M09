@@ -6,7 +6,11 @@
 #grid-container {
     display: grid;
     grid-template-areas: 
-    'el1 el1 el2 el2';
+    'el1 el1 el2 el2'
+    'el3 . el2 el2'
+    'el3 . . el7'
+    'el3 el8 el8 el7'
+    'el9 el9 el9 el9';
     gap: 20px 10px;
 }
 
@@ -26,19 +30,19 @@ div:nth-child(2) {
 }
 
 div:nth-child(3) {
-    grid-row: span 3;
+    grid-area: el3;
 }
 
 div:nth-child(7) {
-    grid-row: span 2;
+    grid-area: el7;
 }
 
 div:nth-child(8) {
-    grid-column: span 2;
+    grid-area: el8;
 }
 
 div:nth-child(9) {
-    grid-column: span 4;
+    grid-area: el9;
 }
 
 div:nth-child(1),div:nth-child(5),div:nth-child(9){
