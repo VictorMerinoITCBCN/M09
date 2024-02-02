@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #menu {
@@ -14,6 +15,7 @@
     padding: 10px;
     width: 100%;
     background-color: black;
+    z-index: 1;
 }
 
 #menu a {
@@ -23,4 +25,140 @@
 
 #menu a:hover {
     text-decoration: underline;
+}
+
+#inici {
+    position: relative;
+    height: 100vh;
+}
+
+#inici img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#portada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%);
+    background: #00000059;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+#nosaltres {
+    padding: 20px;
+}
+
+#nosaltres .float-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#nosaltres div .img-container {
+    width: 100%;
+}
+
+#nosaltres div .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#carta {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.grid-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    gap: 10px;
+    height: calc(100vh - 100px);
+}
+
+.grid-container * {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-title {
+    grid-column: span 3;
+}
+
+.menu-name {
+    grid-row: span 2;
+}
+
+.menu-content {
+    grid-column: span 2;
+}
+
+.menu-content * {
+    border: none;
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#galeria {
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.flex-container div {
+    width: 100%;
+    height: 300px;
+}
+
+.flex-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-container div::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 40px);
+    height: 300px;
+    background: #0000006e;
+    z-index: 1;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 20px;
 }
