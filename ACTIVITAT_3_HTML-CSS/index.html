@@ -9,9 +9,14 @@
 </head>
 <body>
     <header id="menu">
-        <a href="#nosaltres">Nosaltres</a>
-        <a href="#carta">Carta</a>
-        <a href="#galeria">Galeria</a>
+        <a href="#inici">Restaurant de coberts</a>
+        <button id="btn-nav"><i class="fa-solid fa-bars"></i></button>
+        <nav id="navigator">
+            <a href="#nosaltres">Nosaltres</a>
+            <a href="#carta">Carta</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contactar">Contactar</a>
+        </nav>
     </header>
     <main id="inici">
         <img src="img/portada.jpg" alt="Plato de comida">
@@ -64,13 +69,24 @@
             <div><img src="img/img-galeria.jpg" alt=""></div>
             <div><img src="img/img-galeria.jpg" alt=""></div>
             <div><img src="img/img-galeria.jpg" alt=""></div>
-            <div><img src="img/img-galeria.jpg" alt=""></div>    
+            <div><img src="img/img-galeria.jpg" alt=""></div>
+            <div><img src="img/img-galeria.jpg" alt=""></div>
+            <div><img src="img/img-galeria.jpg" alt=""></div>
         </div>
     </section>
-    <footer>
+    <footer id="contactar">
         <div><i class="fa-regular fa-envelope"></i>2023_victor.merino@iticbcn.cat</div>
         <div><i class="fa-solid fa-phone"></i></i>+34 666 93 23 14</div>
-        Restaurant de coberts
+        <span>Restaurant de coberts</span>
     </footer>
 </body>
+<script>
+    const btnNav = document.getElementById("btn-nav");
+    const nav = document.getElementById("navigator");
+
+    btnNav.addEventListener("click", () => {
+        if (nav.style.display == "flex") nav.style.display = "none";
+        else nav.style.display = "flex";
+    })
+</script>
 </html>
