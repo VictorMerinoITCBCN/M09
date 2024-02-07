@@ -33,7 +33,7 @@ html {
 
 #navigator {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 210px;
     position: absolute;
     display: none;
     flex-wrap: wrap;
@@ -42,8 +42,7 @@ html {
 
 #navigator a{
     width: 100%;
-    margin: 0 10px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 #menu a {
@@ -53,6 +52,11 @@ html {
 
 #menu a:hover {
     text-decoration: underline;
+}
+
+#navigator a:hover {
+    background: #fff;
+    color: #000;
 }
 
 #inici {
@@ -79,7 +83,7 @@ html {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 70px 20px;
 }
 
 #nosaltres .float-container {
@@ -153,7 +157,7 @@ section {
 }
 
 .flex-container div {
-    width: 100%;
+    width: 300px;
     height: 300px;
 }
 
@@ -203,10 +207,6 @@ footer div {
     .grid-container {
         width: 60%;
         margin: auto;
-    }
-
-    .flex-container div {
-        width: 300px;
     }
 
     footer {
