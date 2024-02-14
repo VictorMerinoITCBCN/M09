@@ -82,26 +82,15 @@ html {
     border-radius: 40px;
 }
 
+
+.float-container p img {
+    width: 100%;
+}
+
 section {
     padding: 70px 20px;
 }
 
-#nosaltres .float-container {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-#nosaltres div .img-container {
-    width: 100%;
-}
-
-#nosaltres div .img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
 
 #carta {
     background: #000;
@@ -114,7 +103,7 @@ section {
     grid-template-columns: 100px 1fr 1fr;
     grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
     gap: 10px;
-    height: calc(100vh - 100px);
+    height: 100%;
 }
 
 .grid-container * {
@@ -183,6 +172,15 @@ footer div {
 
 @media (min-width: 600px) {
 
+    section {
+        padding: 70px 10%;
+        height: 100vh;
+    }
+
+    #galeria {
+        height: max-content;
+    }
+
     #btn-nav {
         display: none;
     }
@@ -200,13 +198,17 @@ footer div {
         width: min-content;
     }
 
+    #navigator a:hover {
+        background: none;
+        color: #fff;
+    }
+
     #portada {
         width: 50%;
     }
 
-    .grid-container {
-        width: 60%;
-        margin: auto;
+    .float-container p img {
+        width: 300px;
     }
 
     footer {
