@@ -76,10 +76,19 @@ html {
     left: 50%;
     width: 90%;
     transform: translate(-50%,-50%);
-    background: #00000059;
+    background: #000000b4;
     color: #ffffff;
     padding: 30px;
-    border-radius: 40px;
+    border-radius:10px;
+}
+
+#portada h1 {
+    font-weight: 100;
+}
+
+#portada h1 b {
+    color: #f00;
+    font-weight: bold;
 }
 
 section {
@@ -104,15 +113,14 @@ section {
 .grid-container {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 100px 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 80px 1fr 1fr;
+    grid-template-rows: 50px max-content 1fr max-content 1fr;
     gap: 10px;
     height: 100%;
 }
 
 .grid-container * {
     border: 1px solid #fff;
-    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -128,7 +136,11 @@ section {
 }
 
 .menu-content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
     grid-column: span 2;
+    padding: 20px;
 }
 
 .menu-content * {
@@ -139,6 +151,19 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.carta-img {
+    position: relative;
+}
+
+.carta-img span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5% 0;
+    background: #000000c3;
+    border: none;
 }
 
 .flex-container {
@@ -154,10 +179,31 @@ section {
     height: 300px;
 }
 
-.flex-container img {
+.flex-container div:hover {
+    box-shadow: 0 0 10px 5px #0066ffab ;
+}
+
+.flex-container div img {
     width: 100%;
     height: 100%;
+    border: 1px solid #bbb;
+    padding: 5px;
     object-fit: cover;
+}
+
+.dark-img {
+    position: relative;
+}
+
+.dark-img::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: "";
+    background: #00000063;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
 }
 
 footer {
@@ -178,7 +224,6 @@ footer div {
 
     section {
         padding: 70px 20%;
-        height: 100vh;
     }
 
     #galeria {
@@ -214,6 +259,10 @@ footer div {
 
     #portada {
         width: 50%;
+    }
+
+    #nosaltres {
+        height: 100vh;
     }
 
     .float-container {
