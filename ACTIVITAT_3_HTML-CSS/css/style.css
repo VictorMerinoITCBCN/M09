@@ -199,11 +199,11 @@ section {
     height: 300px;
 }
 
-.flex-container div:hover {
+.galery-img-container:hover {
     box-shadow: 0 0 10px 5px #0066ffab ;
 }
 
-.flex-container div img {
+.galery-img-container img {
     width: 100%;
     height: 100%;
     border: 1px solid #bbb;
@@ -211,11 +211,11 @@ section {
     object-fit: cover;
 }
 
-.dark-img {
+.galery-img-container {
     position: relative;
 }
 
-.dark-img::before {
+.galery-img-container::before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -225,8 +225,12 @@ section {
     height: calc(100% - 10px);
 }
 
-.dark-img:hover::before {
-    background: #00000052;
+.galery-img-container:nth-child(1)::before,.galery-img-container:nth-child(4)::before,.galery-img-container:nth-child(5)::before,.galery-img-container:nth-child(8)::before{
+    background: #00000081;
+}
+
+.galery-img-container:hover::before {
+    background: #00000081;
 }
 
 footer {
