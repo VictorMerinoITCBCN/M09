@@ -221,9 +221,12 @@ section {
     left: 50%;
     transform: translate(-50%,-50%);
     content: "";
-    background: #00000063;
     width: calc(100% - 10px);
     height: calc(100% - 10px);
+}
+
+.dark-img:hover::before {
+    background: #00000052;
 }
 
 footer {
