@@ -17,6 +17,7 @@
             <a href="#galeria">Galeria</a>
             <a href="#contactar">Contactar</a>
         </nav>
+        <button id="switch-theme"><i class="fa-solid fa-moon"></i></button>
     </header>
     <main id="inici">
         <img src="img/portada.jpg" alt="Plato de comida">
@@ -96,5 +97,21 @@
         if (nav.style.display == "flex") nav.style.display = "none";
         else nav.style.display = "flex";
     })
+</script>
+<script>
+        const btnSwitchTheme = document.getElementById("switch-theme")
+        btnSwitchTheme.addEventListener("click",() => {
+            const root = document.documentElement
+            btnSwitchTheme.classList.toggle("dark-mode")
+            if (btnSwitchTheme.classList.contains("dark-mode")) {
+                btnSwitchTheme.innerHTML = '<i class="fa-solid fa-sun"></i>'
+                root.style.setProperty("--light-dark-color","#111")
+                root.style.setProperty("--dark-light-color","#fff")
+            } else {
+                btnSwitchTheme.innerHTML = '<i class="fa-solid fa-moon"></i>'
+                root.style.setProperty("--light-dark-color","#fff")
+                root.style.setProperty("--dark-light-color","#111")
+            }
+        })
 </script>
 </html>
