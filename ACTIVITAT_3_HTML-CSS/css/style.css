@@ -91,7 +91,7 @@ body {
     background: var(--dark-light-color);
     color: var(--light-dark-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
     transition: all .5s linear;
 }
@@ -130,7 +130,6 @@ body {
 
 #portada h1 b {
     color: #f00;
-    font-weight: bold;
 }
 
 section {
