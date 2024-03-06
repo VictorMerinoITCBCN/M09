@@ -92,6 +92,13 @@ body {
     color: var(--light-dark-color);
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+#switch-theme:hover {
+    background: var(--light-dark-color);
+    color: var(--dark-light-color);
 }
 
 #inici {
