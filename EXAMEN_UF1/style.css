@@ -169,4 +169,9 @@ footer {
         grid-row: 5;
         grid-column: span 2;
     }
+
+    .firma {
+        justify-content: center;
+        gap: 10px;
+    }
 }
