@@ -329,6 +329,15 @@ footer span {
     display: none;
 }
 
+.email:hover .rotate3D-target {
+    animation: rotate3DAnimation 1s infinite;
+}
+
+@keyframes rotate3DAnimation {
+    from {transform: scaleX(1);}
+    to {transform: scaleX(-1);}
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --light-dark-color: #111;
