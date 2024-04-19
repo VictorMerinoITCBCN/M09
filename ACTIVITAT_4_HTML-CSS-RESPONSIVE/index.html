@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/v2/knife_fork_icon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/493470e672.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer>
+        $(document).ready(()=> {
+            $(".slide-toggle").click(() => {
+                $(".slide-target").slideToggle()
+            })
+        })
+    </script>
     <title>Restaurant de Coberts</title>
 </head>
 <body>
@@ -32,14 +40,16 @@
         </div>
     </main>
     <section id="nosaltres">
-        <h2>Sobre Nosaltres</h2>
-        <div class="float-container">
-            <img src="img/v2/nosotros1.webp" alt="Cocina del Restaurante">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, eos? Quod provident, vel voluptas amet incidunt blanditiis perferendis! Porro praesentium reiciendis atque sed quae, rem accusantium commodi molestiae quia non.</p> 
-        </div>
-        <div class="float-container">
-            <img src="img/v2/nosotros2.webp" alt="Camarero tomando nota">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore repellat corporis facilis totam cum. Architecto repudiandae ad adipisci, nulla rerum optio quisquam culpa ex temporibus labore impedit exercitationem laboriosam?</p>
+        <h2 class="slide-toggle">Sobre Nosaltres</h2>
+        <div class="slide-target">
+            <div class="float-container">
+                <img src="img/v2/nosotros1.webp" alt="Cocina del Restaurante">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, eos? Quod provident, vel voluptas amet incidunt blanditiis perferendis! Porro praesentium reiciendis atque sed quae, rem accusantium commodi molestiae quia non.</p> 
+            </div>
+            <div class="float-container">
+                <img src="img/v2/nosotros2.webp" alt="Camarero tomando nota">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore repellat corporis facilis totam cum. Architecto repudiandae ad adipisci, nulla rerum optio quisquam culpa ex temporibus labore impedit exercitationem laboriosam?</p>
+            </div>
         </div>
     </section>
     <section id="carta">
@@ -53,11 +63,24 @@
             </div>
             <div class="carta-img">
                 <img src="img/v2/carta1.webp" alt="Espgaguetis">
+                <ul>
+                    <li>Ingredients: </li>
+                    <li>- 400 g de Spaghetti Garofalo</li>
+                    <li>- 400 g de tomate triturado.</li>
+                    <li>- 300 g de carne picada de ternera.</li>
+                </ul>
                 <span>Espgaguetis</span>
             </div>
             
             <div class="carta-img">
                 <img src="img/v2/carta2_v2.webp" alt="Tarta">
+                <ul>
+                    <li>Ingredients: </li>
+                    <li>- 200 g de Galleta</li>
+                    <li>- 100 g de Mantequilla.</li>
+                    <li>- 250 g de Chocolate negro.</li>
+                    <li>- 1L de leche</li>
+                </ul>
                 <span>Tarta</span>
             </div>
             <h4 class="menu-name">Menu 2</h4>
@@ -67,11 +90,24 @@
             </div>
             <div class="carta-img">
                 <img src="img/v2/carta1.webp" alt="Espgaguetis">
+                <ul>
+                    <li>Ingredients: </li>
+                    <li>- 400 g de Spaghetti Garofalo</li>
+                    <li>- 400 g de tomate triturado.</li>
+                    <li>- 300 g de carne picada de ternera.</li>
+                </ul>
                 <span>Espgaguetis</span>
             </div>
             
             <div class="carta-img">
                 <img src="img/v2/carta2_v2.webp" alt="Tarta">
+                <ul>
+                    <li>Ingredients: </li>
+                    <li>- 200 g de Galleta</li>
+                    <li>- 100 g de Mantequilla.</li>
+                    <li>- 250 g de Chocolate negro.</li>
+                    <li>- 1L de leche</li>
+                </ul>
                 <span>Tarta</span>
             </div>
         </div>
