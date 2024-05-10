@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/v2/knife_fork_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/493470e672.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer>
@@ -125,6 +126,38 @@
             <div class="galery-img-container"><img src="img/v2/galeria_v2.webp" alt="Personas haciendo un brindis"></div>
         </div>
     </section>
+    <section id="videos">
+        <h2>Videos del Restaurant</h2>
+        <div class="videos-container">
+            <video controls muted>
+                <source type="video/mp4" src="src/video.mp4" controls muted></source>
+                <source type="video/webm" src="src/video.webm" controls muted><source>
+                <source type="video/ogg" src="src/video.ogg" controls muted></source>
+            </video>
+            
+            <div class="video" id="video-container">
+                <video id="video">
+                    <source type="video/mp4" src="src/video.mp4" controls muted></source>
+                    <source type="video/webm" src="src/video.webm" controls muted><source>
+                    <source type="video/ogg" src="src/video.ogg" controls muted></source>
+                </video>
+                <div class="video-controlls">
+                    <div>
+                        <button id="btn-play">
+                            <span id="icon-play-pause" class="material-symbols-outlined">play_circle</span>
+                        </button>
+                        <button id="btn-volume">
+                            <span id="icon-volume" class="material-symbols-outlined">volume_up</span>
+                        </button>
+                        <input type="range" name="" id="range-volume" min="0" max="100" value="100">
+                    </div>
+                    <button id="btn-fullscreen">
+                        <span class="material-symbols-outlined">fullscreen</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer id="contactar">
         <div class="email"><i class="rotate3D-target fa-regular fa-envelope"></i>2023_victor.merino@iticbcn.cat</div>
         <div><i class="fa-solid fa-phone"></i></i>+34 666 93 23 14</div>
@@ -156,4 +189,5 @@
             }
         })
 </script>
+<script src="script/video-controller.js"></script>
 </html>
